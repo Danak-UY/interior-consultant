@@ -6,9 +6,6 @@ const gridAreaPlugin = require("@savvywombat/tailwindcss-grid-areas");
 module.exports = {
   content: ["./index.html", "./js/*.js"],
   theme: {
-    minWidth: {
-      "1/2": "50%",
-    },
     extend: {
       colors: {
         gray: {
@@ -19,6 +16,12 @@ module.exports = {
       },
       gridTemplateAreas: {
         card: ["img data", "title title"],
+      },
+      aspectRatio: {
+        banner: "1474 / 1110",
+      },
+      minWidth: {
+        "1/2": "50%",
       },
     },
     fontFamily: {
