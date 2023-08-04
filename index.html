@@ -14,45 +14,71 @@
 
     <link rel="stylesheet" href="./css/styles.min.css" />
     <script src="./js/menu.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
   <body class="bg-gray-dark text-white">
-    <div class="container flex min-h-screen max-w-7xl flex-col gap-8 p-8">
+    <div
+      class="container flex min-h-screen max-w-7xl flex-col gap-8 p-4 md:p-8"
+    >
       <header class="flex items-center justify-between gap-8">
         <a
           href="/"
-          class="border border-white p-2 font-serif-logo text-sm font-extralight uppercase"
-          >This Interior</a
+          class="border border-white p-2 font-serif-logo text-sm font-extralight uppercase transition duration-500 hover:bg-white hover:text-gray-dark"
         >
+          This Interior
+        </a>
 
-        <nav>
-          <ul class="hidden gap-24 md:flex">
+        <button
+          id="menu-trigger"
+          class="fixed right-2 top-3 z-20 p-2 md:hidden"
+        >
+          <span class="material-symbols-outlined transition-all duration-500">
+            menu
+          </span>
+        </button>
+
+        <nav
+          id="menu-content"
+          class="fixed inset-0 z-10 flex transition-all duration-500 md:static"
+        >
+          <ul
+            class="flex w-full flex-col content-center justify-center gap-4 bg-gray-dark text-center md:w-auto md:flex-row md:gap-20"
+          >
             <li>
               <span
                 href="#"
                 class="inline-block border-b-2 border-white py-2 font-bold"
-                >Home</span
               >
+                Home
+              </span>
             </li>
             <li>
               <a
                 href="#"
                 class="inline-block border-transparent py-2 transition-all hover:border-b-2 hover:border-white hover:pb-4 hover:pt-0"
-                >Collection</a
               >
+                Collection
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="inline-block border-transparent py-2 transition-all hover:border-b-2 hover:border-white hover:pb-4 hover:pt-0"
-                >About</a
               >
+                About
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="inline-block border-transparent py-2 transition-all hover:border-b-2 hover:border-white hover:pb-4 hover:pt-0"
-                >Contact</a
               >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

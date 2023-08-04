@@ -23,6 +23,9 @@ module.exports = {
       minWidth: {
         "1/2": "50%",
       },
+      rotate: {
+        full: "360deg",
+      },
     },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
